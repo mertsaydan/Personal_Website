@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useData } from './DataContext'
+import { useState, useEffect } from 'react'
 
 function Header() {
+  const { data, locale, setLocale } = useData()
   const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
@@ -11,9 +13,9 @@ function Header() {
     <header className="relative w-full bg-[linear-gradient(90deg,#4731D3_0%,#4731D3_66%,#CBF281_66%,#CBF281_100%)] h-[500px]">
       <div className="flex items-center justify-between h-full">
         <div className="flex flex-col h-full ml-30 gap-10">
-          <h3 className="text-[#CBF281] mb-14 mt-16 font-bold text-xl"> Mert</h3>
-          <h2 className="text-[#CBF281] font-bold text-4xl">I am a Frontend <br/> Developer...</h2>
-          <p className="text-white font-thin">...who likes to craft solid and scalable frontend <br/>products with great user experiences.</p>
+          <h3 className="text-[#CBF281] mb-14 mt-16 font-bold text-xl">{data.heroSection.greeting}</h3>
+          <h2 className="text-[#CBF281] font-bold text-4xl whitespace-pre-line">{data.heroSection.intro}</h2>
+          <p className="text-white font-thin whitespace-pre-line">{data.heroSection.headerText}</p>
         <div className="flex">
           <button className="flex gap-2 bg-white text-[#3730A3] py-2 px-4 rounded-sm ">
             <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -29,14 +31,30 @@ function Header() {
       </div>
 
       <div className="absolute left-[60%] top-7 -translate-x-1/2 flex items-center gap-3 text-lg font-bold">
-        <p className="text-xs text-white"><span className="text-[#CBF281]">TÜRKÇE</span>'YE GEÇ</p>
+        <button
+          type="button"
+          onClick={() => setLocale(locale === 'tr' ? 'en' : 'tr')}
+          className="text-xs text-white"
+        >
+          {locale === 'tr' ? (
+            <>
+              <span className="text-white">TO </span>
+              <span className="text-[#CBF281]">ENGLISH</span>
+            </>
+          ) : (
+            <>
+              <span className="text-[#CBF281]">TÜRKÇE</span>
+              <span className="text-white">'YE GEÇ</span>
+            </>
+          )}
+        </button>
       </div>
 
       <div className="absolute left-[74%] top-6 -translate-x-1/2 flex items-center gap-3 text-lg font-bold">
         <button
           type="button"
           onClick={() => setDarkMode((prev) => !prev)}
-          className={`flex items-center gap-2 rounded-full   px-3 py-1 text-xs text-[#3730A3] transition ${darkMode ? 'bg-white/20' : 'hover:bg-white/20'}`}
+          className={`flex items-center gap-2 rounded-full px-3 py-1 text-xs text-[#3730A3] transition ${darkMode ? 'bg-white/20' : 'hover:bg-white/20'}`}
         >
           <span className={`flex h-5 w-10 items-center rounded-full bg-[#3730A3]/70 p-0.5 transition ${darkMode ? 'justify-end' : 'justify-start'}`}>
             <span className="h-3 w-3 rounded-full bg-[#FFE86E] shadow-md transition" />
@@ -46,10 +64,10 @@ function Header() {
       </div>
 
       <div className="absolute left-[66%] top-1/2 -translate-x-1/2 -translate-y-1/2" >
-        <img src="./src/assets/avatar.png" alt="Avatar" className="w-[300px] h-[260px] rounded-full" />
+        <img src={data.heroSection.profileImage} alt="Avatar" className="w-[300px] h-[260px] rounded-full" />
       </div>
     </header>
-  );
+  )
 }
 
 export default Header;

@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <main className="w-[1100px] h-full justify-center items-center mx-auto">
+    <main className="max-w-[1100px] h-full justify-center items-center mx-auto">
       <Header />
       <Skills />
       <Profile />
