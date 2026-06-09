@@ -8,11 +8,13 @@ import { useEffect } from 'react'
 import axios from 'axios'
 import data from '../components/data'
 
+const apiKey = import.meta.env.VITE_API_KEY;
 function App() {
  useEffect(() => {
+  const apiKey = import.meta.env.VITE_API_KEY;
    axios.post('https://reqres.in/api/workintech', data, {
      headers: {
-       'x-api-key': 'pub_1f0846b59844545b66a7d7538f4669c44cbce244c2a15c4267c1a43a0f4f5256',
+       'x-api-key': apiKey
      },
    })
    .then(res => console.log(res.data))
