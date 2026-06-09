@@ -9,14 +9,20 @@ function Header() {
     : 'bg-[linear-gradient(90deg,#4731D3_0%,#4731D3_66%,#CBF281_66%,#CBF281_100%)] text-white'
 
   const notify = (message) => {
-    toast(message, {
+    toast.info(message, {
       position: 'top-right',
       autoClose: 1800,
-      hideProgressBar: true,
+      hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,
       draggable: false,
-      theme: darkMode ? 'dark' : 'light',
+      theme: 'colored',
+      style: {
+        background: darkMode ? '#CBF281' : '#3730A3', 
+        color: darkMode ? '#3730A3' : '#CBF281', 
+        fontWeight: 'bold',
+        borderRadius: '10px'
+      },
     })
   }
 
