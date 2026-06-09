@@ -64,14 +64,14 @@ const data = {
     },
     contactSection: {
       title: 'Send me a message!',
-      description: 'Got a question or proposal, or just want to say hello? Go ahead.',
+      description: 'Got a question or proposal, or just want\nto say hello? Go ahead.',
       email: 'mertsaydan@squaremd.co.uk',
     },
   },
   tr: {
     heroSection: {
       greeting: 'Merhaba, Ben Mert',
-      intro: 'Frontend Geliştiricisiyim...',
+      intro: 'Frontend\nGeliştiricisiyim...',
       profileImage: './src/assets/avatar.png',
       socials: [
         {
@@ -83,7 +83,7 @@ const data = {
           link: 'https://github.com/mertsaydan',
         },
       ],
-      headerText: '...sağlam ve ölçeklenebilir ön uç ürünler oluşturmayı seven biriyim.',
+      headerText: '...sağlam ve ölçeklenebilir ön uç\nürünler oluşturmayı seven biriyim.',
     },
     profileSection: {
       title: 'Profil',
@@ -133,7 +133,7 @@ const data = {
     },
     contactSection: {
       title: 'Bana bir mesaj gönder!',
-      description: 'Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba demek mi istiyorsunuz? Hadi bakalım.',
+      description: 'Bir sorunuz veya öneriniz mi var,\nyoksa sadece merhaba demek mi istiyorsunuz? Hadi bakalım.',
       email: 'mertsaydan@squaremd.co.uk',
     },
   },
