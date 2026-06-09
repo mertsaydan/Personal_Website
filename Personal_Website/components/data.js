@@ -3,7 +3,7 @@ const data = {
     heroSection: {
       greeting: "Hi, I'm Mert",
       intro: "I am a\nFrontend Developer...",
-      profileImage: "./src/assets/avatar.png",
+      profileImage: "/assets/avatar.png",
       socials: [
         {
           name: 'LinkedIn',
@@ -30,17 +30,17 @@ const data = {
         'After graduating from Yeditepe University Faculty of Pharmacy in 2009, I worked as a pharmacist for 17 years.',
         'In 2026, I decided to follow my passion for coding and started developing my skills in Frontend Development.',
       ],
-      image: './src/assets/work.png',
+      image: '/assets/work.png',
     },
     skillsSection: {
       title: 'Skills',
       skills: [
-        { name: 'JavaScript', logo: './src/assets/js_logo.png' },
-        { name: 'React', logo: './src/assets/react_logo.png' },
-        { name: 'Redux', logo: './src/assets/redux_logo.png' },
-        { name: 'VS Code', logo: './src/assets/vscode_logo.png' },
-        { name: 'Figma', logo: './src/assets/figma_logo.png' },
-        { name: 'Tailwind CSS', logo: './src/assets/tail_logo.png' },
+        { name: 'JavaScript', logo: '/assets/js_logo.png' },
+        { name: 'React', logo: '/assets/react_logo.png' },
+        { name: 'Redux', logo: '/assets/redux_logo.png' },
+        { name: 'VS Code', logo: '/assets/vscode_logo.png' },
+        { name: 'Figma', logo: '/assets/figma_logo.png' },
+        { name: 'Tailwind CSS', logo: '/assets/tail_logo.png' },
       ],
     },
     projectsSection: {
@@ -50,9 +50,9 @@ const data = {
           name: 'Pizza Project',
           description: 'A platform where users can explore, order, and customize various types of pizzas.',
           technologies: ['react', 'redux', 'vercel'],
-          siteLink: '#',
+          siteLink: 'https://pizza-two-cyan.vercel.app/',
           codeLink: 'https://github.com/mertsaydan/S8-Pizza-Challenge',
-          image: './src/assets/project_1.png',
+          image: '/assets/pizza.png',
         },
         {
           name: 'Journey',
@@ -60,7 +60,7 @@ const data = {
           technologies: ['react', 'redux', 'vercel'],
           siteLink: '#',
           codeLink: '#',
-          image: './src/assets/project_2.png',
+          image: '/assets/project_2.png',
         },
       ],
     },
@@ -74,7 +74,7 @@ const data = {
     heroSection: {
       greeting: 'Merhaba, Ben Mert',
       intro: 'Frontend\nGeliştiricisiyim...',
-      profileImage: './src/assets/avatar.png',
+      profileImage: '/assets/avatar.png',
       socials: [
         {
           name: 'LinkedIn',
@@ -101,17 +101,17 @@ const data = {
         '2009 yılında Yeditepe Üniversitesi Eczacılık Fakültesi’nden mezun olduktan sonra, 17 yıl serbest eczacılık yaptım. ',
         '2026 yılının başında, kodlama tutkumun peşinden gitmeye karar verdim ve Frontend Development alanında kendimi geliştirmeye başladım.',
       ],
-      image: './src/assets/work.png',
+      image: '/assets/work.png',
     },
     skillsSection: {
       title: 'Yetenekler',
       skills: [
-        { name: 'JavaScript', logo: './src/assets/js_logo.png' },
-        { name: 'React', logo: './src/assets/react_logo.png' },
-        { name: 'Redux', logo: './src/assets/redux_logo.png' },
-        { name: 'VS Code', logo: './src/assets/vscode_logo.png' },
-        { name: 'Figma', logo: './src/assets/figma_logo.png' },
-        { name: 'Tailwind CSS', logo: './src/assets/tail_logo.png' },
+        { name: 'JavaScript', logo: '/assets/js_logo.png' },
+        { name: 'React', logo: '/assets/react_logo.png' },
+        { name: 'Redux', logo: '/assets/redux_logo.png' },
+        { name: 'VS Code', logo: '/assets/vscode_logo.png' },
+        { name: 'Figma', logo: '/assets/figma_logo.png' },
+        { name: 'Tailwind CSS', logo: '/assets/tail_logo.png' },
       ],
     },
     projectsSection: {
@@ -121,9 +121,9 @@ const data = {
           name: 'Pizza Projesi',
           description: 'Kullanıcıların çeşitli pizza türlerini keşfedebileceği, sipariş verebileceği ve özelleştirebileceği bir platform.',
           technologies: ['react', 'redux', 'vercel'],
-          siteLink: '#',
+          siteLink: 'https://pizza-two-cyan.vercel.app/',
           codeLink: 'https://github.com/mertsaydan/S8-Pizza-Challenge',
-          image: './src/assets/project_1.png',
+          image: '/assets/pizza.png',
         },
         {
           name: 'Journey',
@@ -131,7 +131,7 @@ const data = {
           technologies: ['react', 'redux', 'vercel'],
           siteLink: '#',
           codeLink: '#',
-          image: './src/assets/project_2.png',
+          image: '/assets/project_2.png',
         },
       ],
     },
