@@ -18,6 +18,8 @@ const data = {
     },
     profileSection: {
       title: 'Profile',
+      subtitle: 'Basic Information',
+      subtitle2: 'About Me',
       basicInfo: [
         { label: 'Birth Date', value: '07.03.1985' },
         { label: 'Location', value: 'Ankara' },
@@ -25,8 +27,8 @@ const data = {
         { label: 'Role', value: 'Frontend, UI' },
       ],
       about: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc.',
+        'After graduating from Yeditepe University Faculty of Pharmacy in 2009, I worked as a pharmacist for 17 years.',
+        'In 2026, I decided to follow my passion for coding and started developing my skills in Frontend Development.',
       ],
       image: './src/assets/work.png',
     },
@@ -45,11 +47,11 @@ const data = {
       title: 'Projects',
       projects: [
         {
-          name: 'E-Commerce',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.',
+          name: 'Pizza Project',
+          description: 'A platform where users can explore, order, and customize various types of pizzas.',
           technologies: ['react', 'redux', 'vercel'],
           siteLink: '#',
-          codeLink: '#',
+          codeLink: 'https://github.com/mertsaydan/S8-Pizza-Challenge',
           image: './src/assets/project_1.png',
         },
         {
@@ -87,6 +89,8 @@ const data = {
     },
     profileSection: {
       title: 'Profil',
+      subtitle: 'Kişisel Bilgiler',
+      subtitle2: 'Hakkımda',
       basicInfo: [
         { label: 'Doğum Tarihi', value: '07.03.1985' },
         { label: 'İkamet Şehri', value: 'Ankara' },
@@ -94,8 +98,8 @@ const data = {
         { label: 'Rol', value: 'Frontend, UI' },
       ],
       about: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc.',
+        '2009 yılında Yeditepe Üniversitesi Eczacılık Fakültesi’nden mezun olduktan sonra, 17 yıl serbest eczacılık yaptım. ',
+        '2026 yılının başında, kodlama tutkumun peşinden gitmeye karar verdim ve Frontend Development alanında kendimi geliştirmeye başladım.',
       ],
       image: './src/assets/work.png',
     },
@@ -114,11 +118,11 @@ const data = {
       title: 'Projeler',
       projects: [
         {
-          name: 'E-Ticaret',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.',
+          name: 'Pizza Projesi',
+          description: 'Kullanıcıların çeşitli pizza türlerini keşfedebileceği, sipariş verebileceği ve özelleştirebileceği bir platform.',
           technologies: ['react', 'redux', 'vercel'],
           siteLink: '#',
-          codeLink: '#',
+          codeLink: 'https://github.com/mertsaydan/S8-Pizza-Challenge',
           image: './src/assets/project_1.png',
         },
         {

@@ -10,15 +10,15 @@ function Profile() {
   const valueClass = darkMode ? 'text-white' : 'text-white'
 
   return (
-    <div className={`w-full h-[450px] ${sectionClass}`}>
-      <h1 className={`text-4xl font-bold pt-10 ml-30 ${titleClass}`}>{title}</h1>
-      <section className="flex mt-10 ml-30 gap-10 mr-30 justify-between">
-        <div className="flex flex-col gap-4">
+    <div className={`w-full py-12 ${sectionClass}`}>
+      <h1 className={`px-4 text-3xl font-bold sm:px-8 sm:text-4xl lg:pl-30 ${titleClass}`}>{title}</h1>
+      <section className="mt-10 flex flex-col gap-10 px-4 sm:px-8 lg:flex-row lg:justify-between lg:px-0 lg:ml-30 lg:mr-30">
+        <div className="flex flex-col gap-4 lg:max-w-[320px]">
           <div className="flex flex-col gap-4">
-            <h2 className={`text-xl ${headingClass}`}>Basic Information</h2>
+            <h2 className={`text-xl ${headingClass}`}>{data.profileSection.subtitle}</h2>
             <div className="grid gap-4 text-sm">
               {basicInfo.map((item) => (
-                <div key={item.label} className="grid grid-cols-[150px_minmax(0,1fr)] items-start gap-x-4">
+                <div key={item.label} className="grid grid-cols-[120px_minmax(0,1fr)] items-start gap-x-4 sm:grid-cols-[150px_minmax(0,1fr)]">
                   <p className={`font-semibold whitespace-nowrap ${labelClass}`}>{item.label}</p>
                   <p className={`font-light ${valueClass}`}>{item.value}</p>
                 </div>
@@ -26,11 +26,11 @@ function Profile() {
             </div>
           </div>
         </div>
-        <div>
-          <img src={image} alt="Work" className="w-[250px] h-[250px] rounded-sm" />
+        <div className="flex justify-center lg:justify-start">
+          <img src={image} alt="Work" className="h-[220px] w-[220px] rounded-sm object-cover sm:h-[250px] sm:w-[250px]" />
         </div>
-        <div className="flex flex-col gap-4 w-[250px]">
-          <h2 className={`text-xl ${headingClass}`}>About Me</h2>
+        <div className="flex flex-col gap-4 lg:w-[250px]">
+          <h2 className={`text-xl ${headingClass}`}>{data.profileSection.subtitle2}</h2>
           {about.map((paragraph, index) => (
             <p key={index} className={`font-light text-sm mt-4 ${valueClass}`}>
               {paragraph}

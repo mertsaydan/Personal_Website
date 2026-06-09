@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <main className="min-h-screen max-w-[1100px] justify-center items-center mx-auto bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-white">
+    <main className="min-h-screen w-full max-w-[1100px] mx-auto overflow-x-hidden bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-white">
       <Header />
       <Skills />
       <Profile />
